@@ -1,12 +1,14 @@
 import React from 'react';
- import './article.css';
- const Article = (props) => (
+import { Link } from 'react-router-dom';
+import './article.css';
+
+const Article = (props) => (
   <article className="Card">
     <div className="Card-text">
       {props.excerpt}
     </div>
     <div className="Card-meta">
-      <span>Author: <strong>{props.author}</strong></span>
+    <Link to={props.id}>More...</Link>
     </div>
   </article>
 );
