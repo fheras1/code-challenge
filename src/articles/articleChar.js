@@ -8,8 +8,8 @@ class ArticleChar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      article: {}
-    }
+      article: {},
+    };
   }
    // lifecycle
   componentWillMount() {
@@ -35,7 +35,7 @@ class ArticleChar extends Component {
           {content}
         </div>
       </article>
-    )
+    );
   }
 }
- export default ArticleChar;
+export default ArticleChar;
