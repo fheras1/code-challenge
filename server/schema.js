@@ -1,4 +1,5 @@
 import {
+  GraphQLNonNull,
   GraphQLBoolean,
   GraphQLObjectType,
   GraphQLString,
@@ -43,6 +44,15 @@ const Query = new GraphQLObjectType({
       type: new GraphQLList(articleType),
       resolve() {
         return db.Article.find();
+      },
+    },
+    article: {
+      type: articleType,
+      args: {
+        id: { type: new GraphQLNonNull(GraphQLString)}
+      },
+      resolve(obj, { id }) {
+        return db.Article.findById(id);
       },
     },
   }),
