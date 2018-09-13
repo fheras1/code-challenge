@@ -1,0 +1,20 @@
+.ArticleChar {
+    margin: 0 auto;
+  }
+   .ArticleChar-author {
+    font-style: italic;
+    margin-left: 1em;
+  }
+   .ArticleChar-text {
+    margin: 1em 1em 2em;
+  }
+   .ArticleChar-tagList {
+    margin: 1em;
+    margin-left: 0;
+  }
+   .ArticleChar-tag {
+    padding: 0.5em;
+    margin: 0.5em 0.5em 0.5em;
+    background-color: #eaeaea;
+    border-radius: 10px;
+  }
