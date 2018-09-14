@@ -10,7 +10,7 @@ import db from './db';
 
 const articleType = new GraphQLObjectType({
   name: 'Article',
-  description: 'This represents a Article',
+  description: 'This represents an Article',
   fields: () => ({
     author: {
       type: GraphQLString,

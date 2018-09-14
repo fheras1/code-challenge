@@ -33,7 +33,7 @@ class App extends Component {
         <Header />
         <Router>
           <div>
-          <Route exact path="/" render={() => <ArticleList articles={this.state.articles} />} />
+            <Route exact path="/" render={() => <ArticleList articles={this.state.articles} />} />
             <Route path="/:id" component={ArticleChar} />
           </div>
         </Router>
